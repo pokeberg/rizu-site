@@ -254,3 +254,16 @@ h1{
 .faq details[open]{
   box-shadow: 0 10px 22px rgba(0,0,0,0.06);
 }
+
+/* iOS Safari: extend background into safe areas */
+html{
+  background: var(--bg);
+}
+
+body{
+  min-height: 100svh; /* dynamic viewport height on mobile */
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
