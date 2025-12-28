@@ -208,3 +208,21 @@ h1{
   .hero{ padding: 26px; }
   .grid{ grid-template-columns: 1fr; }
 }
+
+/* App Store badge */
+.appstore{
+  display:inline-flex;
+  align-items:center;
+  height: 44px;
+  border-radius: 12px;
+}
+
+.appstore img{
+  height: 44px;     /* Apple badge standard-ish */
+  width: auto;
+  display:block;
+}
+
+.appstore:hover{ transform: translateY(-1px); }
+.appstore{ transition: transform .12s ease; }
+
