@@ -3,27 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Rizu – One small thing a day</title>
+  <title>Rizu — One small thing a day</title>
+  <meta name="description" content="Rizu gives you one gentle daily task — small, doable, and oddly satisfying." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="card">
-    <h1>Rizu</h1>
-    <p class="subtitle">One small thing a day.</p>
+  <header class="top">
+    <div class="brand">Rizu</div>
+    <nav class="nav">
+      <a href="#features">Features</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </header>
 
-    <p class="body">
-      Rizu gives you one gentle daily task — small, doable, and oddly satisfying.
-    </p>
+  <main class="wrap">
+    <section class="card hero">
+      <h1>One small thing a day.</h1>
+      <p class="lead">
+        Rizu gives you one gentle daily task — small, doable, and oddly satisfying.
+        Build momentum without pressure.
+      </p>
 
-    <div class="buttons">
-      <a class="primary" href="#">Download on the App Store</a>
-      <a class="secondary" href="mailto:hello@rizu.one">Contact</a>
-    </div>
+      <div class="buttons">
+        <a class="btn primary" href="#" aria-label="Download Rizu on the App Store">Download on the App Store</a>
+        <a class="btn secondary" href="mailto:hello@rizu.one">Email support</a>
+      </div>
 
-    <footer>
-      <a href="privacy.html">Privacy Policy</a>
+      <p class="note">Support: <a href="mailto:hello@rizu.one">hello@rizu.one</a></p>
+    </section>
+
+    <section id="features" class="grid">
+      <div class="card">
+        <h2>One task a day</h2>
+        <p>No lists. No overwhelm. Just one tiny win.</p>
+      </div>
+      <div class="card">
+        <h2>Grace</h2>
+        <p>Not feeling today’s task? Shuffle it when you’ve earned Grace.</p>
+      </div>
+      <div class="card">
+        <h2>Streak & history</h2>
+        <p>See your progress build over time — quietly motivating.</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>© <span id="year"></span> Rizu</div>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="support.html">Support</a>
+      </div>
     </footer>
   </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
-
