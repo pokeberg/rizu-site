@@ -226,3 +226,31 @@ h1{
 .appstore:hover{ transform: translateY(-1px); }
 .appstore{ transition: transform .12s ease; }
 
+/* FAQ accordion */
+.faq details{
+  background: rgba(255,255,255,0.55);
+  border: 1px solid rgba(20,20,20,0.08);
+  border-radius: 18px;
+  padding: 14px 14px;
+  margin: 10px 0;
+}
+
+.faq summary{
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--ink);
+  list-style: none;
+  outline: none;
+}
+
+.faq summary::-webkit-details-marker{ display:none; }
+
+.faq details p{
+  margin: 10px 0 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.faq details[open]{
+  box-shadow: 0 10px 22px rgba(0,0,0,0.06);
+}
